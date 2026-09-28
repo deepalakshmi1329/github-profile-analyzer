@@ -1,0 +1,144 @@
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: white;
+  padding: 25px 8%;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  color: #666;
+}
+
+main {
+  width: 84%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+.search,
+.profile,
+.repo {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.search {
+  padding: 30px;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.search-box input {
+  flex: 1;
+}
+
+button {
+  padding: 12px 22px;
+  background: #111;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.profile {
+  margin-top: 25px;
+  padding: 25px;
+  display: flex;
+  gap: 25px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.repo-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 15px;
+}
+
+.repos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.repo {
+  padding: 20px;
+  text-decoration: none;
+  color: #111;
+}
+
+.repo p {
+  color: #666;
+  min-height: 45px;
+}
+
+.repo span {
+  margin-right: 12px;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .repos {
+    grid-template-columns: 1fr;
+  }
+
+  .repo-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .repo-head input {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
