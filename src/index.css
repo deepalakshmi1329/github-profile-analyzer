@@ -1,10 +1,2 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f6f8;
-  color: #111;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#0f172a}
